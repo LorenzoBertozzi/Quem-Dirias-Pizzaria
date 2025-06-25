@@ -13,7 +13,7 @@ export function Restaurants(){
 
     useEffect(()=> {
         async function getFoods() {
-            const response = await fetch("http://10.0.0.48:3000/restaurants")
+            const response = await fetch("http://200.18.136.189:3000/restaurants")
             const data = await response.json()
             console.log(data);
             setRestaurants(data);

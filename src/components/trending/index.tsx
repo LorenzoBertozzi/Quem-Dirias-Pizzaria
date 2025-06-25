@@ -1,4 +1,4 @@
-import { FlatList } from "react-native";
+import { FlatList, View , Dimensions} from "react-native";
 import { useEffect, useState } from "react";
 import { CardHorizontal } from "./food";
 
@@ -13,11 +13,16 @@ export interface FoodProps{
     restaurantId: string;
 }
 
+const screenWidth = Dimensions.get('window').width;
+const cardWidth = 14; // ou a largura do seu CardHorizontal
+const spacing = 14;
+const totalSpace = spacing * 2;
+
 export function TrendingFoods(){
     const[foods, setFoods] = useState<FoodProps[]>([])
     useEffect(()=> {
         async function getFoods() {
-            const response = await fetch("http://10.0.0.48:3000/foods")
+            const response = await fetch("http://200.18.136.189:3000/foods")
             const data = await response.json()
             console.log(data);
             setFoods(data);
@@ -25,11 +30,10 @@ export function TrendingFoods(){
         getFoods();
     }, [])
     return(
-        <FlatList
-            data={foods}
-            renderItem={({item})=> <CardHorizontal food={item}/>}
-            contentContainerStyle={{gap:14, paddingLeft:14, paddingRight:14}}
-            numColumns={2}
-        />
+        <View className="flex-row flex-wrap justify-center">
+            {foods.map((item, index) => (
+                <CardHorizontal key={index} food={item}/>
+            ))}
+        </View>
     );
 }

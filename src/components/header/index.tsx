@@ -7,7 +7,9 @@ export function Header(){
         <View className='flex flex-row items-center justify-center '>
             <View className='py-4 px-20 rounded-b-full bg-slate-100 w-full'>
                 <View className='flex-row items-center justify-center'>
-                    <Image className="w-10 h-10 flex justify-center items-center" source={ require('../../assets/images/teste3.png')}/>
+                    <Link href={'/mesas'}>
+                        <Image className="w-10 h-10 flex justify-center items-center" source={ require('../../assets/images/teste3.png')}/>
+                    </Link>
                 </View>
                 <View className="px-11 my-2 w-full flex-row border border-transparent h-10 rounded-full items-center bg-white">
                         <Feather name="search" size={16} color="#BF3131"/>
@@ -18,7 +20,11 @@ export function Header(){
     );
 }
 
-export function Cardapio(){
+interface NavProps{
+    name: string;
+}
+
+export function Navegation({name}: NavProps){
     return(
         <View className='flex-row flex justify-between items-center py-4 px-4'>
             <Pressable>
@@ -27,7 +33,7 @@ export function Cardapio(){
                 </Link>
             </Pressable>
             <Text className='font-semibold text-lg color-[#06161C]'>
-                Cardapio
+                {name}
             </Text>
             <Pressable>
                 <Ionicons name='search' size={20} color={"#06161C"}/>
@@ -40,7 +46,7 @@ export function Choose(){
     return(
         <View className='bg-slate-100 rounded-b-full'>
             <View className='flex-row flex justify-between items-center px-4 py-4'>                
-                <Pressable >
+                <Pressable className='bg-white h-10 w-10 justify-center items-center rounded-full'>
                     <Link href={'/'}>
                         <Feather  name='arrow-left' size={20} color={"#06161C"}/>
                     </Link>

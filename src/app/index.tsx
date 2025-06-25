@@ -1,4 +1,4 @@
-import { Image, Text, View , ScrollView} from "react-native";
+import { Image, Text, View , ScrollView, Dimensions} from "react-native";
 import { Link } from "expo-router";
 import Constants from 'expo-constants'
 
@@ -11,21 +11,34 @@ import { Restaurants } from "../components/restaurants";
 import { Footer } from "../components/footer";
 
 const statusBarHeight = Constants.statusBarHeight;
+const screenHeight = Dimensions.get('window').height;
 
 export default function Index() {
   return (
-    <ScrollView style={{flex:1}} className="gb-slate-200" showsVerticalScrollIndicator={false}>
-        <View className="w-full">
-          <Header/>
-        </View>
-        <Section link={"/menu"} label="" name="Categorias" action={() => console.log("Clicou no Veja Mais")} size="text-lg"/>
-        <Restaurants/>
-        <Section  name="Sabores" link={"/menu"} label="Ver todos" action={() => console.log("Clicou no Veja Mais")} size="text-lg"/>
-        <TrendingFoods/>
-        <View>
-          <Footer/>
-        </View>
-    </ScrollView>
+    <View className="flex-1">
+      <ScrollView style={{ flex: 1 }} contentContainerStyle={{ paddingBottom: 100 }} showsVerticalScrollIndicator={false}>
+        <Header />
+        <Section
+          link={"/menu"}
+          label=""
+          name="Categorias"
+          action={() => console.log("Clicou no Veja Mais")}
+          size="text-lg"
+        />
+        <Restaurants />
+        <Section
+          name="Sabores"
+          link={"/menu"}
+          label="Ver todos"
+          action={() => console.log("Clicou no Veja Mais")}
+          size="text-lg"
+        />
+        <TrendingFoods />
+      </ScrollView>
+      <View className="absolute bottom-0 left-0 right-0 bg-white">
+        <Footer />
+      </View>
+    </View>
   );
 }
 
