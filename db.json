@@ -2,85 +2,120 @@
   "restaurants": [
     { 
       "id": "1", 
-      "name": "KFC", 
-      "image": "https://i.imgur.com/sZ1Jye3.png"
+      "name": "Tradicionais", 
+      "image": "https://i.imgur.com/aqKvQHB.png"
     },
     { 
       "id": "2", 
-      "name": "McDonald's", 
-      "image": "https://i.imgur.com/su4iB3p.png"
+      "name": "Especiais", 
+      "image": "https://i.imgur.com/onpcO2K.png"
     },
     { 
       "id": "3", 
-      "name": "Outback", 
-      "image": "https://i.imgur.com/jg3GJVN.png"
+      "name": "Vegetariana", 
+      "image": "https://i.imgur.com/B3ufGSY.png"
     },
     { 
       "id": "4", 
-      "name": "Sushi Dev", 
-      "image": "https://i.imgur.com/ffYWFBX.png"
+      "name": "Doces", 
+      "image": "https://i.imgur.com/4DLcyAD.png"
     },
     { 
       "id": "5", 
-      "name": "Burguer Grill", 
-      "image": "https://i.imgur.com/kmQvG2T.png"
-    },
-    { 
-      "id": "6", 
-      "name": "Marmitas express", 
-      "image": "https://i.imgur.com/uXRuDFD.png"
+      "name": "Bebidas", 
+      "image": "https://thvnext.bing.com/th/id/OIP.qKvuwPhFANId0kJyuc06swHaHa?cb=thvnext&rs=1&pid=ImgDetMain"
     }
   ],
   "foods": [
     { 
       "id": "1", 
-      "name": "Frango assado", 
-      "price": 39.90,
+      "name": "Pimentão", 
+      "price": 23.00,
       "time": "50-60 min",
       "delivery": 5.99,
       "rating": 4.8,
-      "image": "https://i.imgur.com/CEVUdju.png",
+      "image": "https://i.imgur.com/DB9NXQc.png",
       "restaurantId": "1"
 
     },
     { 
       "id": "2", 
-      "name": "Marmita fit", 
-      "price": 29,
+      "name": "Pepino", 
+      "price": 23.00,
       "time": "30-40 min",
       "delivery": 2.99,
       "rating": 4.9,
-      "image": "https://i.imgur.com/uXRuDFD.png",
+      "image": "https://i.imgur.com/YWmmUMk.png",
       "restaurantId": "6"
     },
     { 
       "id": "3", 
-      "name": "Burguer Dev", 
-      "price": 40,
+      "name": "Calabresa", 
+      "price": 40.00,
       "time": "50-60 min",
       "delivery": 5.99,
       "rating": 4.5,
-      "image": "https://i.imgur.com/O5c3lyU.png",
+      "image": "https://i.imgur.com/lM4oX3t.png",
       "restaurantId": "5"
     },
     { 
       "id": "4", 
-      "name": "Picanha Grill", 
-      "price": 36,
+      "name": "Napollitana", 
+      "price": 36.00,
       "time": "50-60 min",
       "delivery": 5.99,
       "rating": 4.4,
-      "image": "https://i.imgur.com/0UjG3wk.png",
+      "image": "https://i.imgur.com/k7QqwZ2.png",
       "restaurantId": "3"
     },
     { 
       "id": "5", 
-      "name": "Açai 300ml", 
-      "price": 20,
+      "name": "Shimeji", 
+      "price": 29.00,
       "time": "20-30 min",
       "delivery": 2.99,
       "rating": 4.4,
-      "image": "https://i.imgur.com/BaUUCkc.png",
+      "image": "https://i.imgur.com/8Lmx0G3.png",
+      "restaurantId": "3"
+    },
+    { 
+      "id": "5", 
+      "name": "Alho Poro", 
+      "price": 52.00,
+      "time": "20-30 min",
+      "delivery": 2.99,
+      "rating": 4.4,
+      "image": "https://i.imgur.com/9QNgkp5.png",
+      "restaurantId": "3"
+    },
+    { 
+      "id": "5", 
+      "name": "Lombo", 
+      "price": 29.00,
+      "time": "20-30 min",
+      "delivery": 2.99,
+      "rating": 4.4,
+      "image": "https://i.imgur.com/YXVyBbE.png",
+      "restaurantId": "3"
+    },
+    { 
+      "id": "5", 
+      "name": "Frango Com Catupiry", 
+      "price": 26.00,
+      "time": "20-30 min",
+      "delivery": 2.99,
+      "rating": 4.4,
+      "image": "https://i.imgur.com/ybNrtsu.png",
+      "restaurantId": "3"
+    },
+    { 
+      "id": "5", 
+      "name": "Banana", 
+      "price": 48.0,
+      "time": "20-30 min",
+      "delivery": 2.99,
+      "rating": 4.4,
+      "image": "https://i.imgur.com/CJHIH7q.png",
       "restaurantId": "3"
     }
   ]
